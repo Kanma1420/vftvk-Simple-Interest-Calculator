@@ -10,7 +10,7 @@
 
             <h1>Simple Interest Calculator</h1>
 
-        Amount <input type="number"  id="principal">  <br/>
+        Amount <input type="number"  id="principal" onchange="validateAmount()">  <br/>
         Rate <input type="range"  id="rate" min= 1 max = 20 value= 10.25 onchange= "updateRate()">  <br/>
         No. of Years <select id="years">
             <option value="1">1</option>
@@ -28,7 +28,7 @@
         </select>
         <span id = "rate_val">
         10.25%    
-        </span>
+        </span></br>
         Interest : <span id="result"></span><br>
 
         <button onclick="compute()">Compute Interest</button>
@@ -37,7 +37,7 @@
 
         <footer>
 
-            &#169; This Calculator belongs to Oriaku Ogeya
+            &#169; Everyone can get rich
     
     
         </footer>
